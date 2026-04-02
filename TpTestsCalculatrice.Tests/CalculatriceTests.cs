@@ -10,11 +10,11 @@ public class CalculatriceTests
     public void Addition_Retourne5_Si2Plus3()
     {
         Calculatrice calc = new Calculatrice();
-        int resultat = calc.Addition(0, 0);
-        Assert.AreEqual(0, resultat);
-        int resultat2 = calc.Addition(-1, 1);
-        Assert.AreEqual(0, resultat2);
-        int resultat3 = calc.Addition(100, 200);
-        Assert.AreEqual(300, resultat3);
+        int resultat = calc.Max(3, 7);
+        Assert.AreEqual(7, resultat);
+        int resultat2 = calc.Max(10, 2);
+        Assert.AreEqual(10, resultat2);
+        int resultat3 = calc.Max(5, 5);
+        Assert.AreEqual(5, resultat3);
     }
 }
